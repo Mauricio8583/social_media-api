@@ -3,8 +3,10 @@ import userRoutes from './routes/users.js'
 import authRoutes from './routes/auth.js'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
+import * as dotenv from 'dotenv'
 
 const app = express();
+dotenv.config();
 
 app.listen(4000, () => {
     console.log('listening on port 4000')
